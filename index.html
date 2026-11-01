@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">My<span>Portfolio.</span></a>
+
+            <button class="menu-btn" id="menu-btn"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <h2>Student & Future Developer</h2>
+            <p>
+                I am a student passionate about programming,
+                web development and learning new technologies.
+                I love turning ideas into useful projects.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="profile-circle">YN</div>
+            <h3>Your Name</h3>
+            <p>Student | Web Development Learner</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <div class="about-card">
+            <p>
+                Hello! I am a college student interested in technology
+                and software development. I am learning programming
+                and web development to build creative and useful
+                applications.
+            </p>
+
+            <div class="about-details">
+                <p><strong>Name:</strong> Your Name</p>
+                <p><strong>Course:</strong> Your Course</p>
+                <p><strong>College:</strong> Your College Name</p>
+                <p><strong>Goal:</strong> Become a Software Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <p class="section-subtitle">
+            Technologies I am learning and practising.
+        </p>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML</h3>
+                <p>Creating webpage structure.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <p>Designing attractive webpages.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Adding interactive features.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>C Programming</h3>
+                <p>Learning logic and problem solving.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <p class="section-subtitle">
+            Some projects I have created or am working on.
+        </p>
+
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-icon">👨‍🎓</div>
+                <h3>Student Portfolio</h3>
+                <p>
+                    A personal website to showcase my profile,
+                    skills, education and projects.
+                </p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-icon">⚡</div>
+                <h3>Electricity Bill Calculator</h3>
+                <p>
+                    A project to calculate an electricity bill
+                    using the number of units consumed.
+                </p>
+                <div class="tags">
+                    <span>C Programming</span>
+                    <span>Logic</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-icon">📝</div>
+                <h3>My Next Project</h3>
+                <p>
+                    This section can showcase another project
+                    as I continue learning programming.
+                </p>
+                <div class="tags">
+                    <span>Learning</span>
+                    <span>Practice</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <p class="section-subtitle">
+            Have a question or project idea? Send me a message.
+        </p>
+
+        <form class="contact-form" id="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5"
+                      placeholder="Write your message..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank"
+               rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank"
+               rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="year"></span> Your Name | Student Portfolio</p>
+        <p>Designed with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
